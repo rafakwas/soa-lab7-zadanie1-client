@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core">
+<h:head>
+    <title>hello</title>
+</h:head>
+
+<h:body>
+    <h2>Registered topics</h2>
+    <h:panelGroup rendered="#{empty listcontroller.topics}">
+        <em>No topics in repository.</em>
+    </h:panelGroup>
+    <h:dataTable id="datatable" value="#{listcontroller.topics}" var="_topic">
+        <h:column>
+            <f:facet name="header">id</f:facet>
+            #{_topic}
+        </h:column>
+        <h:column>
+            <h:form>
+                <h:commandButton value="subsribe" action="${listcontroller.subsribe(_topic)}" />
+            </h:form>
+        </h:column>
+    </h:dataTable>
+</h:body>
+</html>

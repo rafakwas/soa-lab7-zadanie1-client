@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SOA_lab7_zadanie1_client:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="zadanie1-client.war">
+      <element id="artifact" artifact-name="SOA_lab7_zadanie1_client:war exploded" />
+    </root>
+  </artifact>
+</component>

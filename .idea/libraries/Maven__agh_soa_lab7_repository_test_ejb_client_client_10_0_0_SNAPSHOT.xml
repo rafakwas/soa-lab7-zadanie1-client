@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: agh.soa.lab7:repository-test:ejb-client:client:10.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/agh/soa/lab7/repository-test/10.0.0-SNAPSHOT/repository-test-10.0.0-SNAPSHOT-client.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/agh/soa/lab7/repository-test/10.0.0-SNAPSHOT/repository-test-10.0.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/agh/soa/lab7/repository-test/10.0.0-SNAPSHOT/repository-test-10.0.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
