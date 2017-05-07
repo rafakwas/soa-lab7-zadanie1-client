@@ -22,8 +22,19 @@
         <h:column>
             <h:form>
                 <h:commandButton value="subsribe" action="${listcontroller.subsribe(_topic)}" />
+                <h:commandButton value="unsubscribe" action="#{listcontroller.unsubscribe(_topic)}"/>
+                <h:commandButton value="reset new message" action="#{listcontroller.resetNewMessage}">
+                    <f:ajax render="messages"/>
+                </h:commandButton>
             </h:form>
         </h:column>
     </h:dataTable>
+
+
+    <p>
+        <h:panelGroup id="messages">
+            <h:outputFormat rendered="#{listcontroller.newMessage}" value="new message"/>
+        </h:panelGroup>
+    </p>
 </h:body>
 </html>
